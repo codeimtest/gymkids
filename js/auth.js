@@ -105,6 +105,7 @@ completeBtn.addEventListener("click", function () {
 		if (code === '1111') {
 			alert("Код " + code + " успешно принят");
 			inputs.forEach(input => input.classList.remove('error'));
+			window.location.href = "/gymkids/feed.html";//Редирект на вёрстку профиля
 		} else {
 			alert("Ошибка в введенном коде из смс");
 			inputs.forEach(input => input.classList.add('error'));
