@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Gym Kids - Вход в личный кабинет</title>
+	<meta name="description" content="GYM Kids">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- Скрипты для авторизации -->
+	<script src="libs/imask/imask.min.js" defer></script>
+	<script src="js/auth.js" defer></script>
+
+</head>
+
+<body>
+
+	<div class="app">
+		<div class="container-sm">
+			<div class="row">
+				<div class="col-12">
+					<button class="btnBack" id="btnBack" type="button">
+						<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.2813 10.625L9.40625 15.5M9.40625 15.5L14.2812 20.375M9.40625 15.5H21.5938M30.125 15.5C30.125 23.5772 23.5772 30.125 15.5 30.125C7.42284 30.125 0.875 23.5772 0.875 15.5C0.875 7.42284 7.42284 0.875 15.5 0.875C23.5772 0.875 30.125 7.42284 30.125 15.5Z" stroke="#494949" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="d-flex justify-content-center">
+				<img src="images/logo_full.svg" alt="">
+			</div>
+		</header>
+		<div class="app__content">
+			<fieldset class="active">
+				<div class="page__title main__title d-flex justify-content-center">Вход в личный кабинет</div>
+				<div class="container-sm">
+					<div class="row">
+						<div class="col-12">
+							<form >
+								<div class="form_group">
+									<label for="phone">Номер телефона</label>
+									<input type="text" id="phone" class="phone" placeholder="+7 (___) ___-__-__">
+								</div>
+								<div class="form_group">
+									<button class="btn btnNext" type="button" id="send_code" disabled>Продолжить</button>
+								</div>
+								<div class="form_group">
+									<p>Нажимая на кнопку “Продолжить”, я даю согласие на <a href="#">обработку персональных данных</a> и
+										<a href="#">принимаю правила посещения клубов</a></p>
+								</div>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset disabled>
+				<div class="page__title main__title d-flex justify-content-center">Подтвердите вход</div>
+				<div class="container-sm">
+					<div class="row">
+						<div class="col-12">
+							<form>
+								<div class="form_group d-flex align-items-center flex-column">
+									<p class="mb-1">Код подтверждения отправлен на номер</p>
+									<div id="get_code_number" class="bold">+7 (999) 123-32-12</div>
+								</div>
+								<div class="form_group form_group_inputs d-flex align-items-center justify-content-center">
+									<input type="number" name="" id="" class="input-digit">
+									<input type="number" name="" id="" class="input-digit">
+									<input type="number" name="" id="" class="input-digit">
+									<input type="number" name="" id="" class="input-digit">
+								</div>
+								<div class="form_group">
+									<button class="btn" type="button" disabled id="btnComplete">Продолжить</button>
+								</div>
+								<div class="form_group d-flex justify-content-center">
+									<p><a href="#" id="resend_code">Отправить код заново</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</body>
+
+</html>

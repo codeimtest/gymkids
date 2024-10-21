@@ -1,0 +1,81 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+	.app__content{
+		min-height: 50vmax;
+	}
+
+}
+
+/* xs <= Small (sm) */
+ @media (max-width : 576px) {
+	.btn{
+		max-width: 100%;
+	}
+} 
+@media (max-width : 400px) {
+	.card_title{
+		font-size: calc(var(--index)* 1.1);
+	}
+	
+
+}
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+}
+
+/* fix hover */
+@media (hover: hover) {
+	.profile_widget_cards_item:hover {
+    color: #fff;
+}
+}
+@media (hover: none){
+	.profile_widget_cards_item:active{
+		color: #fff;
+	}
+}
